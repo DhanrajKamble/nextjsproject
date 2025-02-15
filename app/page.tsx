@@ -1,9 +1,14 @@
-export default function Home() {
+import React from 'react'
+import About from './(buyer)/about/page'
+
+const MainPage = () => {
   return (
     <>
-      <h1 className="text-3xl text-red-500 flex items-center justify-center h-screen ">
-        Dhanraj Kamble
-      </h1>
+    <div>MainPage</div>
+    {/* Directly Render the Route pages inside main-page */}
+    <About />   
     </>
-  );
+  )
 }
+
+export default MainPage
